@@ -49,11 +49,15 @@ Auto Review Tool is an open-source project designed to help automate the review 
 But you need to run it in the directory app or you can provide path in this comand 
 
 Part 2:
-Answer:
+Answer 
+To scale the automatic code review tool to handle 100+ requests per minute and large repositories, you can do the following:
+
 Servers: I would use cloud services that scale automatically, such as the same AWS or Google Cloud. If the number of requests increases, new servers are added.
 
 Then I would store the data in databases and do caching, which is already implemented in my code, I would use the same one: PostgreSQL.
 
-I would optimize OpenAI and GitHub API calls using a cache of requests that are already repeated. When the number of requests exceeds, add a queue of requests with retries.
+Large repositories could be divided into small groups and processed in parallel. I think this would speed up the work
+
+I would optimize OpenAI and GitHub API calls using a cache of already repeated requests. When the number of requests exceeds, add a queue of requests with retries.
 
 This would make the system more stable, fast and ready for high loads.
