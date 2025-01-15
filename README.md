@@ -21,35 +21,35 @@ Auto Review Tool is an open-source project designed to help automate the review 
    ```bash
    git clone https://github.com/wight0101/Auto-Review-Tool.git
    
-Create a virtual environment (recommended for Windows users):
+2.Create a virtual environment (recommended for Windows users):
    ```bash
    python -m venv venv
 ```
 
-Install required libraries:
+3. Install required libraries:
    ```bash
    pip install -r requirements.txt
    ```
-2. **Get ALL API keys(Chathpt API and Github API)**:
+4. **Get ALL API keys(Chathpt API and Github API)**:
    ```bash
    https://platform.openai.com/signup
 
-4 Github API key
+5. Github API key
    ```bash
     https://github.com/settings/tokens
    ```
-3 Then put Chathpt API and Github API in the .env
+6. Then put Chathpt API and Github API in the .env
 
-4 You need to run redis by Docker by this comand:
+7. You need to run redis by Docker by this comand:
    ```bash
    docker-compose up -d
    ```
- And the comand to check if redis is going
+8. And the comand to check if redis is going
    ```bash
    docker ps
    ```
 
-5 Finally you run the program by
+9. Finally you run the program by
    ```bash
    uvicorn main:app --reload
    ```
