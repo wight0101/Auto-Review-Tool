@@ -7,13 +7,6 @@ Auto Review Tool is an open-source project designed to help automate the review 
 - **Automated Code Review**: Automatically reviews code for potential issues, inconsistencies, and style violations.
 - **Customizable Configuration**: Tailor the review criteria to meet specific coding standards or team preferences.
 - **Detailed Feedback**: Provides comprehensive feedback on code quality, readability, and best practices.
-
-## Installation 📥
-
-### Prerequisites
-
-- Python 3.x
-- pip
   
 ### Steps to Run Locally 🖥️
 
@@ -26,7 +19,7 @@ Auto Review Tool is an open-source project designed to help automate the review 
    python -m venv venv
 ```
 
-3. Install required libraries:
+3. ## Installation 📥, required libraries:
    ```bash
    pip install -r requirements.txt
    ```
@@ -57,8 +50,6 @@ But you need to run it in the directory app or you can provide path in this coma
 
 Part 2:
 Answer:
-To scale the automatic code review tool to handle 100+ requests per minute and large repositories, you can do the following:
-
 Servers: I would use cloud services that scale automatically, such as the same AWS or Google Cloud. If the number of requests increases, new servers are added.
 
 Then I would store the data in databases and do caching, which is already implemented in my code, I would use the same one: PostgreSQL.
